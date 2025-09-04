@@ -5,12 +5,12 @@
 <html lang="nb">
   <head>
     <!-- Setter tegnsettet til UTF-8 slik at norske bokstaver (æ, ø, å) vises riktig -->
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
 
     <!-- Gjør siden responsiv ved å skalere innholdet etter skjermbredden.
          "width=device-width" = tilpass bredden til enhetens skjerm.
          "initial-scale=1.0" = startzoom er 100%. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Viser tittelen på nettsiden i nettleserfanen -->
     <title>Forside - Dataspæll</title>
@@ -55,13 +55,85 @@
       <!-- <img> = bilde. 
            "src" = kilde-URL.
            "alt" = alternativ tekst for skjermlesere og hvis bildet ikke lastes. -->
-      <img src="https://picsum.photos/200/300?grayscale" alt="_" />
+      <img src="https://picsum.photos/200/300?grayscale" alt="_" >
 
       <!-- <p> = paragraf-tag for vanlig tekst. Brukes til beskrivende innhold -->
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt
       </p>
+      <a href="offers.html">Se Tilbud</a>
     </section>
+    <main>
+      <section>
+        <h2>Populere Spill</h2>
+          <article>
+            <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000084766/1bcf06d845f9027b4330e8d07658845a2fe3d66882bdaeb70325aeb35c54f1c9" alt="Metroid Prime 4 Bilde" width="350" height="250"> 
+            <h3>Mertoid Prime 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p>499 kr</p>
+            <a href="">Legg i hanldevogn</a>
+          </article>
+
+          <article>
+            <img src="https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png" alt="RedDead2 Bilde" width="350" height="250"> 
+            <h3>Red Dead Redemption 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p>499 kr</p>
+            <a href="">Legg i hanldevogn</a>
+          </article>
+
+          <article>
+            <img src="https://cdn.wikimg.net/en/hkwiki/images/thumb/1/13/Silksong_cover.jpg/640px-Silksong_cover.jpg" alt ="Bilde av Silksong" width="350" height="250"> 
+            <h3>Hollow Knight: Silksong</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p>499 kr</p>
+            <a href="">Legg i hanldevogn</a>
+          </article>
+
+          <article>
+            <img src="https://s3.amazonaws.com/gameopedia_covers/covers/214194/6a23d4e12f172eff59cbcc2fe6f9805c.jpg" alt="RedDead2 Bilde" width="350" height="250"> 
+            <h3>Battlefield 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p>499 kr</p>
+            <a href="">Legg i hanldevogn</a>
+          </article>
+      </section>
+
+      <section>
+        <h2>Kategori</h2>
+        <article>
+          <h3><a href="actionGamesCategori.html">Action</a></h3>
+        </article>
+
+        <article>
+          <h3><a href="nintendoGamesCategori.html">Nintendo</a></h3>
+        </article>
+
+        <article>
+          <h3><a href="RPGGamesCategori.htnml">Rollespill</a></h3>
+        </article>
+
+        <article>
+          <h3><a href="fantasyGamesCategori">Fantasy</a></h3>
+        </article>
+      </section>
+      
+
+    </main>
+    <aside>
+      <h4>Meld deg inn i Spillklubben</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <form>
+        <label>E-post:
+        <input type="email" placeholder="ola.nordmann@hiof.no...">
+        </label>
+
+        <input type="submit" value="Melde deg på">
+
+        <label for="ageValidation">Er du over 18</label>
+        <input type="checkbox" id="ageValidation">
+      </form>
+    </aside>
   </body>
 </html>
