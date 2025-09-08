@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mainlogo{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: #BF0003;
+    text-decoration: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+article{
+    margin: 1rem 0;
+    border: 1px solid #b5b4b4;
+    max-width: 400px;
+    width: 100%;
+    min-width: 250px;
+    padding: 1rem;
+    img{
+        widht: auto;
+        height: auto;
+    }
+
+}
+
+.btnSeTilbud{
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
