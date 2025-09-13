@@ -1,6 +1,25 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
 }
+#globalHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem;
+    nav{
+        ul{
+            padding:0;
+            margin:0;
+            li{
+                list-style: none;
+                display: inline-block;
+            }
+        }
+    }
+}
+
 #mainlogo{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,10 +27,62 @@ body{
     color: #BF0003;
     text-decoration: none;
 }
+
+.dealSection{
+    background-image: url("https://s3.amazonaws.com/gameopedia_covers/covers/214194/6a23d4e12f172eff59cbcc2fe6f9805c.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:var(--basicLightRed);
+    padding: 1rem;
+    position: relative;
+    
+    /*
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    h2, p, a{
+        position: absolute;
+    }
+    p{
+        top: 63px;
+    }
+    a{
+        top: 160px;
+    }*/
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --basic-green: #41d05b;
+    --basicLightRed:  #ed5656; 
+}
+
 a {
     color: #000;
     text-decoration: none;
 }
+
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin: 1rem auto;
+    
+    section{
+        h2{
+            text-align: center;
+        }
+        article{
+            margin: 0 auto;
+        }
+    }
+}
+
 
 article{
     margin: 1rem 0;
@@ -23,6 +94,8 @@ article{
     img{
         width: auto;
         height: auto;
+        max-width: 240px;
+        max-height: 390px;
     }
 
 }
@@ -32,5 +105,31 @@ article{
     background-color: #000;
     color: #fff;
     padding: 10px;
+    border: none;
 }
 
+.sideContainer{
+    background-color: var(--basigLightRed);
+    padding: 1rem;
+
+    form{
+        input{
+            display: block;
+            padding: 1rem;
+            margin: 10px 0;
+        }
+    }
+}
+
+.ageCheck{
+    display: felx;
+    align-items:center;
+   /* gap: */
+}
+
+footer{
+    background-color: #BF0003;
+    color: #f0f0f0;
+    padding: 1rem;
+    min-height: 150px;
+}
