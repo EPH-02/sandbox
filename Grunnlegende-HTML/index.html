@@ -12,12 +12,16 @@
          "initial-scale=1.0" = startzoom er 100%. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../css/stylesheetovelse.css">
 
     <!-- Viser tittelen på nettsiden i nettleserfanen -->
     <title>Forside - Dataspæll</title>
   </head>
+
   <body>
+    <div id="pageContainer">
+
+    
     <!-- Kommentert ut <h1> - brukes kanskje til testing eller tidligere overskrift.
          Kommentarer ignoreres av nettleseren -->
     <!--<h1>Første fil</h1>-->
@@ -56,7 +60,7 @@
       <!-- <h2> = underoverskrift. Viktig for SEO og tilgjengelighet. 
            Hovedoverskrifter bør starte med <h1>, men her er <h2> brukt
            fordi <h1> kanskje finnes andre steder -->
-      <h2>Crazy Gaming Deals</h2>
+      <!--- <h2>Crazy Gaming Deals</h2> --->
 
       <!-- <img> = bilde. 
            "src" = kilde-URL.
@@ -64,11 +68,11 @@
       <!-- <img src="https://picsum.photos/700/500?grayscale" alt="_" > -->
 
       <!-- <p> = paragraf-tag for vanlig tekst. Brukes til beskrivende innhold -->
-      <p>
+     <!-- <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt
-      </p>
-      <a href="offers.html" classs="btnSeTilbud">Se Tilbud</a>
+      </p> --->
+      
     </section>
     <main>
       <section>
@@ -130,20 +134,33 @@
     <aside class="sideContainer">
       <h4>Kontakt oss gjerne</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+  
+    </aside>
+    <footer>    
       <form>
+        <label>Navn:
+          <input type="navn" placeholder="Ola Nordmann">
+        </label>
+
         <label>E-post:
-        <input type="email" placeholder="ola.nordmann@hiof.no...">
+          <input type="email" placeholder="ola.nordmann@hiof.no...">
         </label> 
 
-        <input class="btnSeTilbud" type="submit" value="Kontakt Oss">
+        <label>Emne:
+          <input type="emne" placeholder="Spm om HTML?">
+        </label>
 
+        <label>Melding:
+          <input type="melding" placeholder="Skriv til oss">
+         </label>
+
+        <input class="btn" type="submit" value="Send">
         <label class="ageCheck" for="ageValidation">Er du over 18 
         <input type="checkbox" id="ageValidation">
         </label>
       </form>
-    </aside>
-    <footer>
-      Webutvikling 2025
+      <p>Webutvikling 2025</p>
     </footer>
+    </div>
   </body>
 </html>
