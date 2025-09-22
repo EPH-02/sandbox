@@ -164,11 +164,27 @@
   article{
     margin: 1rem 0;
     border: 1px solid #efefef;
-    max-width: 400px;
-    width: 100%;
+    width: 31%;
     min-width: 250px;
     padding: 1rem;
+    flex-grow: 1;
+    max-width: 800px;
   }
+
+  .category-card{
+    width: 33%;
+    flex-grow: 0;
+    max-width: fit-content:
+  }
+
+  .grow-1{
+    flex-grow: 1;
+  }
+
+  .grow-2{
+  flex-grow: 2;
+  }  
+
   article img{
     width: 100%;   /* HVA: Unngår overflow og inkonsistent skalering */
     height: auto;
@@ -306,6 +322,7 @@
     HVORDAN: Flex-wrap + gap; h2 tar full bredde; artikler vokser etter plass.
     HVORFOR: Enkel, responsiv kort-grid uten kompliserte regler.
   */
+  
   .flex-container{
     display: flex;
     flex-wrap: wrap;
@@ -318,7 +335,7 @@
   .flex-container article{
     min-width: 200px !important;  /* OBS: !important bør brukes sparsomt */
     margin: 0;
-    flex-grow: 1;
+
   }
   
   /*
@@ -327,13 +344,15 @@
     HVORDAN: Justify-start; artikler får bredde-prosent for 3 i rad ved plass.
     HVORFOR: Tettere kortgrid på bredere skjermer.
   */
+
+  /*
   section.flex-grow{
     justify-content: flex-start;
   }
   section.flex-grow article{
     max-width: 900px;
     min-width: 100px;
-    width: 31%;        /* ~3 per rad med gap */
+    width: 31%;        /* ~3 per rad med gap 
   }
   section.flex-grow article.grow-1{
     flex-grow: 2;
@@ -344,7 +363,7 @@
     HVA: Små hjelpeklasser som endrer flex-grow.
     HVORDAN: Påfør på valgte kort/containere.
     HVORFOR: Gir kontroll på plassdistribusjon uten nye spesifikke regler.
-  */
+  
   .grow-1{ flex-grow: 2; }
   .grow-2{ flex-grow: 3; }
-  
+  */
