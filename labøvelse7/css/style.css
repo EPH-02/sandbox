@@ -9,8 +9,8 @@
 /* -----------------------------------------------------
    Grunninnstillinger for HTML-elementet (kan utvides ved behov)
 ----------------------------------------------------- */
-html {
-    
+html img{
+    width: 100%;
 }
 
 /* -----------------------------------------------------
@@ -45,6 +45,11 @@ nav {
    - Fjernet understreking
    - Svart tekstfarge for kontrast
 ----------------------------------------------------- */
+#logo {
+   display: flex;
+   justify-content: center;
+}
+
 nav #logo {
     font-size: 25px;
     margin-bottom: 1rem;
@@ -52,6 +57,12 @@ nav #logo {
     letter-spacing: -5px;
     text-decoration: none;
     color: #000;
+    align-items: center;
+}
+
+main section {
+   display: flex;
+   flex-wrap: wrap;
 }
 
 /* -----------------------------------------------------
@@ -94,6 +105,11 @@ main section:nth-child(odd) {
 ----------------------------------------------------- */
 main section section {
     padding: 0rem 3rem;
+}
+
+#change-order {
+   background-color: #1e4772;
+   color: #fff;
 }
 
 /* -----------------------------------------------------
@@ -225,4 +241,8 @@ h2 {
 ----------------------------------------------------- */
 #some i {
     font-size: 40px;
+}
+
+@media only screen and (min-width: 680px){
+
 }
